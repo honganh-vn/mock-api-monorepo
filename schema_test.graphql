@@ -1,10 +1,9 @@
+directive @markedForRemoval(reason: String) on INPUT_FIELD_DEFINITION | ARGUMENT_DEFINITION | ENUM_VALUE | FIELD_DEFINITION
 directive @binding(constraint: String!) on INPUT_FIELD_DEFINITION | ARGUMENT_DEFINITION
 directive @secured(sub: String, object: String, act: SecuredAction) on FIELD_DEFINITION
 directive @staffSecured(sub: String, object: String, act: SecuredAction) on FIELD_DEFINITION
 directive @sellerSecured(sub: String, object: String, act: SecuredAction) on FIELD_DEFINITION
 directive @goField(forceResolver: Boolean, name: String, omitField: Boolean) on FIELD_DEFINITION | INPUT_FIELD_DEFINITION
-directive @markedForRemoval(reason: String) on INPUT_FIELD_DEFINITION | ARGUMENT_DEFINITION | ENUM_VALUE | FIELD_DEFINITION
-
 
 enum SecuredAction {
     VIEW

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "mock:api": "graphql-faker ./mock-api/schema.graphql"
+    "mock:api": "graphql-faker ./schema_test.graphql"
+
   },
   "devDependencies": {
     "graphql-faker": "^2.0.0-rc.25"
