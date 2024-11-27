@@ -11,7 +11,8 @@ enum SecuredAction {
     UPDATE
     DELETE
 }
-
+# Comment
+# NInh
 # Root Query
 type Query {
     versionQuery: VersionQuery @goField(forceResolver: true)
